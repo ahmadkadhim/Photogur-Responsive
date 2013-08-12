@@ -1,0 +1,27 @@
+<header>
+	<h3><%= @pictures.length %> Pictures</h3>
+	<h1>Photogur</h1>
+</header>
+
+<nav>
+	<p id="addpic"><%= link_to "+ Add Picture", "/pictures/new" %></p>
+</nav>
+
+<div id="pic-container">
+	<% @pictures.each do |picture| %>
+		<div class="picture">
+			<p class="caption"><%= picture[:title] %>, <%= picture[:artist] %></p>
+			<%= link_to image_tag(picture.url), "/pictures/#{picture.id}", :class => "picture" %>
+		</div>
+	<% end %>
+</div>
+
+<script>
+	$('#pic-container').isotope({
+	  // options
+	  itemSelector : 'div.picture',
+	  masonry: {
+
+	  }
+	});
+</script>

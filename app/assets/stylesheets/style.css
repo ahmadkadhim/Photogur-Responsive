@@ -1,0 +1,162 @@
+
+@media all and (max-width: 520px) {
+	header {
+		position: static;
+		display: block;
+		text-align: center;
+		width: 80%;
+		margin: 40px auto;
+		top: inherit;
+		right: auto;
+	}
+
+	nav {
+		position: static;
+		width: 100%;
+	}
+
+}
+
+body {
+	font-size: 14px;
+	background: #ffadb9;
+	padding-top: 3px;
+	border-top: 3px solid #807;
+}
+
+#page {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+header {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	text-align: right;
+	width: 10%;
+	text-overflow: visible;
+	white-space: nowrap;
+}
+
+nav {
+	position: fixed;
+	top: 9px;
+	right: 20px;
+	margin-top: 6px;
+}
+
+#addpic a {
+	font-size: 1.3em;
+	background: rgba(200,200,200,.6);
+	border-bottom: 4px solid #aaa;
+	padding: 9px 9px 7px 9px;
+	transition: all .3s ease-in;
+}
+
+#addpic a:hover {
+	background: rgba(200,200,200,.9);
+	border-bottom: 4px solid #707;
+	margin-top: 2px;
+}
+
+h1, h2, h3, a, p {
+	font-family: "Futura", "Helvetica", "Arial", sans-serif;
+	color: #404;
+}
+
+h1 {
+	font-size: 2.4em;
+	direction: rtl;
+}
+
+p {
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+#pic-container {
+	margin-top: 42px;
+	width: 80%;
+}
+
+div.picture {
+	width: 320px;
+	margin: 0 15px 15px 0;
+	background: #807;
+	border-radius: 15px;
+	border: 5px solid #404;
+	box-shadow: 0 3px 2px -2px rgba(50,50,50,.8);
+}
+
+.caption {
+	text-align: center;
+	font-size: 1.2em;
+	width: 100%;
+	margin: 10px auto 5px auto;
+	color: #fff;
+}
+
+.picture img {
+	width: 320px;
+	display: block;
+	margin: 0 auto;
+	border-top: 3px solid #404;
+	border-radius: 0 0 10px 10px;
+}
+
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
